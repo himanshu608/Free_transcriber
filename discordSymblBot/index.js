@@ -142,8 +142,8 @@ client.on("messageCreate", async (message)=>{
   });
 
   collector.on('end', async (i) => {
-
-    if(msg.content === "_"){
+    console.log(msg)
+    if(msg && msg.content === "_"){
       msg.edit({content : "times up! :loudspeaker: , you didn't react on time, resend to get a new transcribtion order", components : []});
     }
    
