@@ -9,3 +9,15 @@
    -   We provide a Discord bot, which provides a speech to text service whenever a user uploads audio file on the server.
    -   We provide a fully automated AI powered chat-bot. User can interact with it by simple texting method and by voice commands. It listens to user in real time and replies accordingly.
    -   We provide a free video transcription service where user can upload a video and get the transcribed messages. User can also copy and download the messages in text and JSON formats.
+
+## How we built it
+ - We have used modern tech-stack for this project.
+   - For frontend:
+      - ReactJS
+      - Material UI
+      - Bootstrap
+   - For backend
+      - NodeJS
+      - Symbl.ai API
+      - Brainshop.ai API
+      - DiscordJS
