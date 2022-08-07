@@ -8,9 +8,9 @@ import pexels3 from "./pexels-photo-1841841.jpeg";
 function Home() {
   useEffect(() => {
     const appId =
-      "786557586152316e47354752657058767253596433414b69677169376b615932";
+      "";
     const appSecret =
-      "53756348326169655675753775586442787556484c37444f34724f73526d596b655166536767504f5f415f544e6e374d764d4c4a473853753837423478474276";
+      "";
 
     const authOptions = {
       method: "post",
