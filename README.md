@@ -27,3 +27,6 @@
 - We plan on adding more features to the Bot like creating tickets for each transcription.
 - We aim to integrate text to speech services on discord bot.
 
+## Mentions
+- What is Symbl.ai?
+    - Symbl.ai is a conversation intelligence platform powered by AI. Conversation intelligence is a set of techniques to mine the actionable and useful information from conversations using AI, such as calls to action, questions asked, sentiment of the participants, and other similar information that might be missed during a normal dialogue and can be used to improve, analyze and act on conversations at scale. The Symbl.ai APIs help you extract conversation intelligence and make that data actionable by your organization.
