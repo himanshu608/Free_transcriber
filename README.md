@@ -21,3 +21,5 @@
       - Symbl.ai API
       - Brainshop.ai API
       - DiscordJS
+
+https://free-transcriber.netlify.app/
