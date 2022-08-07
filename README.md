@@ -31,6 +31,6 @@
 - What is Symbl.ai?
     - Symbl.ai is a conversation intelligence platform powered by AI. Conversation intelligence is a set of techniques to mine the actionable and useful information from conversations using AI, such as calls to action, questions asked, sentiment of the participants, and other similar information that might be missed during a normal dialogue and can be used to improve, analyze and act on conversations at scale. The Symbl.ai APIs help you extract conversation intelligence and make that data actionable by your organization.
 
--- sounds cool isn't it?
-To utilize the full potential of this platform in your next project got check out Symbl.ai's official documentation.
-https://symbl.ai/
+> sounds cool isn't it? \n
+To utilize the full potential of this platform in your next project got check out [Symbl.ai](https://symbl.ai/)'s official documentation.
+
