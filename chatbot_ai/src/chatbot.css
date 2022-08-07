@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Ubuntu:wght@300&display=swap');
+.search_div input {
+  flex: 0.98;
+  /* border: none; */
+  padding: 8px;
+  outline: none;
+  border-radius: 8px;
+  font-size: medium;
+  width: 50%;
+}
+
+.search_div .mic {
+  text-align: center;
+  padding: 8px;
+}
+
+.messages{
+  width: 100%;
+  background-color: rgb(33, 37, 41);
+  flex:1;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+.messages .msg{
+  max-width: 50%;
+  background-color: azure;
+  text-align: start;
+  padding:10px;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 20px;
+  
+  
+}
+
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.messages {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+.messages .user_query{
+  left:50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.messages .bot_message{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.listening{
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(33, 37, 41);
+  height: 15px;
+}
+
+
+.messagediv{
+  height: 43vh;
+}
+
+
+
+
+
+.messagediv li, .homediv li{
+  list-style: none;
+}
+
+
+.messagediv li::before, .homediv li::before{
+  color:aqua;
+  content: "\00BB";
+  width: 20px;
+  display: inline-block;
+}
+
+.homediv{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.homediv li{
+  font-family: 'Abel', sans-serif;
+}
+
+.mainhome img{
+  max-height: 75vh;
+
+}
+
+.carasoul{
+  max-width:85% !important;
+}
