@@ -98,7 +98,7 @@ client.on('ready', () => {
  });
  
  // Log In our bot
- client.login(process.env.TOKEN);
+
  
  
 
@@ -120,13 +120,16 @@ client.on("messageCreate", async (message)=>{
 					.setStyle(ButtonStyle.Danger) 
 			);
       
- 
-       const msg = await message.reply({content: "_", components:[row]});
 
   // const filter = i => i.user.id === message.author.id;
 
-  const collector = message.channel.createMessageComponentCollector({ time: 10000 });
-  
+  const msg = await message.reply({content: "_", components:[row]});
+
+  // const filter = i => i.user.id === message.author.id;
+
+   const collector = message.channel.createMessageComponentCollector({ max:1, maxProcessed: 1, time: 10000 });
+
+  var isdeleted=false;
   collector.on('collect', async i => {
     if(i.user.id !== message.author.id){
       i.reply({content : ("sorry its not for you :(, if you want to get transcript, upload an audio!!"), ephemeral : true})
@@ -134,22 +137,27 @@ client.on("messageCreate", async (message)=>{
       if(i.customId === 'get_data'){
         msg.edit({content : "Your transcribed messages are on the way!! Be patient!", components : []});
         getdata(att,message);
+                collector.stop();
+
        }else{
+        isdeleted=true;
         msg.delete();
+        collector.stop();
        }
     }
 
   });
 
-  collector.on('end', async (i) => {
-    console.log(msg)
-    if(msg && msg.content === "_"){
-      msg.edit({content : "times up! :loudspeaker: , you didn't react on time, resend to get a new transcribtion order", components : []});
-    }
-   
-  });
+   setTimeout(()=>{
 
+        if(!isdeleted){
+          msg.edit({content : "times up! :loudspeaker: , you didn't react on time, resend to get a new transcribtion order", components : []});
+        }
+
+    },10000)
       }
     
   })
 });
+
+client.login(process.env.TOKEN);
